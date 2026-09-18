@@ -1,0 +1,1021 @@
+{
+  "site": {
+    "name": "امین فارکس",
+    "tagline": "دانلود رایگان اندیکاتورهای MetaTrader 5",
+    "description": "دانلود رایگان اندیکاتورهای MetaTrader 5 با فایل اصلی MQL5 در سایت امین فارکس."
+  },
+  "indicators": [
+    {
+      "id": "18avgma",
+      "filename": "18AvgMA.mq5",
+      "title": "میانگین متحرک 18 گانه",
+      "titleEn": "Average of 18 Moving Averages",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور میانگین متحرک 18 گانه که با ترکیب چند دوره میانگین‌گیری، روند نمودار را به صورت یک خط روان نمایش می‌دهد.",
+      "description": "اندیکاتور 18AvgMA یک خط روند پایدار بر اساس میانگین‌گیری چند دوره‌ای قیمت ترسیم می‌کند. این اندیکاتور با استفاده از یک دوره قابل تنظیم، میانگین قیمت‌های گذشته را به صورت هموار نمایش می‌دهد و برای تشخیص جهت روند در بازه‌های زمانی مختلف بسیار مناسب است. به دلیل هموارسازی داخلی، نویزهای قیمتی به حداقل رسیده و سیگنال‌های قابل اعتمادتری تولید می‌کند.",
+      "features": [
+        "محاسبه میانگین قیمت در چند دوره به صورت ترکیبی",
+        "قابلیت تنظیم دوره محاسبه (Period)",
+        "انتخاب نوع قیمت اعمالی (Close، Open، High، Low و...)",
+        "رسم در پنجره نمودار اصلی",
+        "خط روند روان و بدون نویز"
+      ],
+      "inputs": [
+        {
+          "name": "InpPeriod",
+          "label": "دوره محاسبه",
+          "default": "50"
+        },
+        {
+          "name": "InpAppliedPrice",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        }
+      ],
+      "image": "18AvgMA.png",
+      "downloadPath": "indicators/18AvgMA.mq5"
+    },
+    {
+      "id": "2xma-ichimoku-oscillator",
+      "filename": "2XMA_Ichimoku_Oscillator.mq5",
+      "title": "نوسانگر ایچیموکو دوگانه",
+      "titleEn": "2XMA Ichimoku Oscillator",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "نوسانگر هیستوگرام رنگی بر پایه اختلاف دو خط Tenkan-Sen با دوره‌ها و روش‌های هموارسازی مختلف.",
+      "description": "اندیکاتور 2XMA Ichimoku Oscillator یک نوسانگر در پنجره جداگانه است که اختلاف بین دو خط Tenkan-Sen (خط تبدیل) با دوره‌ها و روش‌های هموارسازی متفاوت را به صورت هیستوگرام رنگی نمایش می‌دهد. این ابزار با ترکیب دو میانگین متحرک صاف شده، قدرت و جهت روند را به صورت بصری واضح نشان می‌دهد و نقاط برگشت احتمالی را به خوبی مشخص می‌کند.",
+      "features": [
+        "نمایش اختلاف دو خط Tenkan-Sen به صورت هیستوگرام رنگی",
+        "قابلیت تنظیم دوره‌های بالا و پایین به صورت مستقل",
+        "انتخاب روش هموارسازی (SMA، EMA، SMMA و...)",
+        "تشخیص نقاط برگشت روند",
+        "نمایش در پنجره جداگانه نمودار"
+      ],
+      "inputs": [
+        {
+          "name": "Up_period1",
+          "label": "دوره بالا 1",
+          "default": "6"
+        },
+        {
+          "name": "Dn_period1",
+          "label": "دوره پایین 1",
+          "default": "6"
+        },
+        {
+          "name": "Up_period2",
+          "label": "دوره بالا 2",
+          "default": "9"
+        },
+        {
+          "name": "Dn_period2",
+          "label": "دوره پایین 2",
+          "default": "9"
+        },
+        {
+          "name": "XLength1",
+          "label": "عمق هموارسازی 1",
+          "default": "25"
+        },
+        {
+          "name": "XLength2",
+          "label": "عمق هموارسازی 2",
+          "default": "80"
+        }
+      ],
+      "image": "2XMA_Ichimoku_Oscillator.png",
+      "downloadPath": "indicators/2XMA_Ichimoku_Oscillator.mq5"
+    },
+    {
+      "id": "3-mas-market",
+      "filename": "3_MAs_Market.mq5",
+      "title": "سه میانگین متحرک بازار",
+      "titleEn": "3 MAs Market - Chaos Zone",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور کندل‌های رنگی محدوده آشوب بر پایه سه میانگین متحرک LWMA با دوره‌های ۳، ۸ و ۱۴.",
+      "description": "اندیکاتور 3 MAs Market کندل‌های رنگی در نمودار اصلی ترسیم می‌کند. این اندیکاتور با استفاده از سه میانگین متحرک وزنی خطی (LWMA) با دوره‌های 3، 8 و 14، محدوده آشوب (Chaos Zone) را تشخیص داده و کندل‌ها را بر اساس موقعیت قیمت نسبت به این سه میانگین به رنگ‌های مختلف نمایش می‌دهد. این روش به شناسایی نقاط تغییر روند و فازهای روند کمک شایانی می‌کند.",
+      "features": [
+        "استفاده از سه میانگین متحرک وزنی خطی (LWMA)",
+        "دوره‌های پیش‌فرض 3، 8 و 14 برای تشخیص سریع، متوسط و کند",
+        "رنگ‌بندی کندل‌ها بر اساس موقعیت در محدوده آشوب",
+        "تشخیص بصری نقاط برگشت روند",
+        "قابلیت تنظیم نوع قیمت و دوره‌ها"
+      ],
+      "inputs": [
+        {
+          "name": "Price",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        },
+        {
+          "name": "inMaLength1",
+          "label": "دوره سریع",
+          "default": "3"
+        },
+        {
+          "name": "inMaLength2",
+          "label": "دوره متوسط",
+          "default": "8"
+        },
+        {
+          "name": "inMaLength3",
+          "label": "دوره کند",
+          "default": "14"
+        }
+      ],
+      "image": "3_MAs_Market.png",
+      "downloadPath": "indicators/3_MAs_Market.mq5"
+    },
+    {
+      "id": "3-rules-macd",
+      "filename": "3_Rules_MACD.mq5",
+      "title": "MACD با سه قانون",
+      "titleEn": "3 Rules MACD Signal",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور MACD با اعمال سه قانون برای شناسایی سیگنال‌های خرید و فروش با دقت بالا.",
+      "description": "اندیکاتور 3 Rules MACD با استفاده از سه قانون معاملاتی بر روی تقاطع‌های MACD، سیگنال‌های خرید و فروش را با دقت بالا تولید می‌کند. این اندیکاتور که توسط Minions Labs توسعه یافته، با ترکیب چندین شرط، سیگنال‌های اشتباه را فیلتر کرده و تنها سیگنال‌های با کیفیت بالا را به صورت فلش‌های آبی بر روی نمودار نمایش می‌دهد.",
+      "features": [
+        "تولید سیگنال خرید و فروش بر اساس سه قانون MACD",
+        "نمایش فلش سیگنال بر روی نمودار اصلی",
+        "کاهش سیگنال‌های اشتباه با فیلتر کردن شرایط",
+        "قابلیت تنظیم دوره‌های Fast MA، Slow MA و Signal Line",
+        "لایسنس Creative Commons برای استفاده غیرتجاری"
+      ],
+      "inputs": [
+        {
+          "name": "inpMAFast",
+          "label": "دوره میانگین سریع",
+          "default": "12"
+        },
+        {
+          "name": "inpMASlow",
+          "label": "دوره میانگین کند",
+          "default": "26"
+        },
+        {
+          "name": "inpSignal",
+          "label": "دوره خط سیگنال",
+          "default": "9"
+        }
+      ],
+      "image": "3_Rules_MACD.png",
+      "downloadPath": "indicators/3_Rules_MACD.mq5"
+    },
+    {
+      "id": "3d-moving-average",
+      "filename": "3D_Moving_Average.mq5",
+      "title": "میانگین متحرک سه‌بعدی",
+      "titleEn": "3D Moving Average",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور میانگین متحرک با الگوریتم سه‌بعدی برای هموارسازی پیشرفته قیمت.",
+      "description": "اندیکاتور 3D Moving Average یک میانگین متحرک پیشرفته است که از الگوریتم سه‌بعدی برای هموارسازی قیمت استفاده می‌کند. این اندیکاتور با ترکیب چندین لایه پردازش، نویزهای قیمتی را به طور چشمگیری کاهش داده و روند واقعی بازار را به وضوح نمایش می‌دهد. توسعه یافته توسط Nikolai Semko، این ابزار برای تحلیل روند در تایم‌فریم‌های مختلف مناسب است.",
+      "features": [
+        "الگوریتم هموارسازی سه‌بعدی پیشرفته",
+        "کاهش چشمگیر نویز قیمت",
+        "نمایش روان و دقیق روند اصلی بازار",
+        "مناسب برای تحلیل در تایم‌فریم‌های مختلف",
+        "استفاده آسان بدون تنظیمات پیچیده"
+      ],
+      "inputs": [],
+      "image": "3D_Moving_Average.png",
+      "downloadPath": "indicators/3D_Moving_Average.mq5"
+    },
+    {
+      "id": "4ma-candles",
+      "filename": "4MA_Candles.mq5",
+      "title": "کندل‌های چهار میانگین متحرک",
+      "titleEn": "4 MA Candles",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور رنگ‌بندی کندل‌ها بر اساس چهار میانگین متحرک با دوره‌های مختلف.",
+      "description": "اندیکاتور 4MA Candles با ترکیب چهار میانگین متحرک با دوره‌های مختلف، کندل‌های نمودار را به سه رنگ مختلف (خاکستری، سبز روشن، قهوه‌ای شنی) رنگ‌آمیزی می‌کند. این ابزار با محاسبه میانگین‌ها و مقایسه موقعیت قیمت، قدرت روند و نقاط برگشت احتمالی را به صورت بصری نمایش می‌دهد. مناسب برای شناسایی سریع روند صعودی و نزولی.",
+      "features": [
+        "استفاده از چهار میانگین متحرک مختلف",
+        "رنگ‌بندی سه‌گانه کندل‌ها",
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 25)",
+        "انتخاب روش میانگین‌گیری (SMA، EMA و...)",
+        "تشخیص بصری قدرت و ضعف روند"
+      ],
+      "inputs": [
+        {
+          "name": "AvgPeriod",
+          "label": "دوره میانگین‌ها",
+          "default": "25"
+        },
+        {
+          "name": "AvgType",
+          "label": "نوع میانگین",
+          "default": "EMA"
+        }
+      ],
+      "image": "4MA_Candles.png",
+      "downloadPath": "indicators/4MA_Candles.mq5"
+    },
+    {
+      "id": "a-better-rsi",
+      "filename": "A_BETTER_RSI.mq5",
+      "title": "RSI بهبود یافته",
+      "titleEn": "A Better RSI",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "نسخه بهبود یافته شاخص قدرت نسبی (RSI) با دوره سیگنال و نرخ تغییر قابل تنظیم.",
+      "description": "اندیکاتور A Better RSI نسخه بهبود یافته شاخص قدرت نسبی (RSI) است که با استفاده از دوره سیگنال و دوره نرخ تغییر (Rate of Change) قابل تنظیم، سیگنال‌های دقیق‌تری نسبت به RSI کلاسیک ارائه می‌دهد. این اندیکاتور با ترکیب RSI با ROC، نقاط برگشت بازار را با حساسیت بالاتری تشخیص می‌دهد و برای شناسایی شرایط اشباع خرید و اشباع فروش بسیار کارآمد است.",
+      "features": [
+        "الگوریتم بهبود یافته RSI کلاسیک",
+        "دوره سیگنال قابل تنظیم (پیش‌فرض 22)",
+        "دوره نرخ تغییر قابل تنظیم (پیش‌فرض 10)",
+        "تشخیص دقیق‌تر نقاط برگشت",
+        "نمایش در پنجره جداگانه نمودار"
+      ],
+      "inputs": [
+        {
+          "name": "Signal_period",
+          "label": "دوره سیگنال",
+          "default": "22"
+        },
+        {
+          "name": "ROC_period",
+          "label": "دوره نرخ تغییر",
+          "default": "10"
+        }
+      ],
+      "image": "A_BETTER_RSI.png",
+      "downloadPath": "indicators/A_BETTER_RSI.mq5"
+    },
+    {
+      "id": "adx-indicator-mql5",
+      "filename": "ADX_Indicator_MQL5.mq5",
+      "title": "شاخص ADX کلاسیک",
+      "titleEn": "ADX Smoothed Indicator",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "شاخص جهت‌دار میانگین (ADX) با سه خط DI+، DI- و ADX برای تشخیص قدرت و جهت روند.",
+      "description": "اندیکاتور ADX Indicator (MQL5) یک شاخص ADX هموار شده است که با سه خط DI Plus (آبی)، DI Minus (قرمز) و ADX، قدرت و جهت روند بازار را به وضوح نشان می‌دهد. توسعه یافته توسط MetaQuotes Software Corp، این اندیکاتور با دوره قابل تنظیم و ضرایب هموارسازی آلفا، یکی از قابل اعتمادترین ابزارها برای تشخیص روند است.",
+      "features": [
+        "سه خط قدرتمند DI+، DI- و ADX",
+        "ضرایب هموارسازی آلفا قابل تنظیم",
+        "تشخیص قدرت روند (مقدار ADX)",
+        "تشخیص جهت روند (مقایسه DI+ و DI-)",
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 14)"
+      ],
+      "inputs": [
+        {
+          "name": "per",
+          "label": "دوره محاسبه",
+          "default": "14"
+        },
+        {
+          "name": "alpha1",
+          "label": "ضریب هموارسازی 1",
+          "default": "0.25"
+        },
+        {
+          "name": "alpha2",
+          "label": "ضریب هموارسازی 2",
+          "default": "0.33"
+        },
+        {
+          "name": "PriceType",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        }
+      ],
+      "image": "ADX_Indicator_MQL5.png",
+      "downloadPath": "indicators/ADX_Indicator_MQL5.mq5"
+    },
+    {
+      "id": "adx-trend-smoothed",
+      "filename": "ADX_trend_smoothed.mq5",
+      "title": "روند ADX هموار شده",
+      "titleEn": "ADX Trend Smoothed",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "میانگین متحرک حجمی ADX با قابلیت هموارسازی اضافی برای تشخیص روندهای پایدار.",
+      "description": "اندیکاتور ADX Trend Smoothed ترکیبی از ADX و میانگین متحرک حجمی است که با اضافه کردن یک دوره هموارسازی اضافی، روندهای قوی و پایدار بازار را با دقت بالا تشخیص می‌دهد. توسعه یافته توسط mladen، این اندیکاتور با دوره هموارسازی قابل تنظیم، نویزهای اضافی را حذف کرده و سیگنال‌های قابل اعتمادی ارائه می‌دهد.",
+      "features": [
+        "ترکیب ADX با میانگین متحرک حجمی",
+        "دوره هموارسازی اضافی قابل تنظیم",
+        "تشخیص روندهای قوی و پایدار",
+        "انتخاب نوع قیمت (Close، Open، High و...)",
+        "نمایش در پنجره نمودار اصلی"
+      ],
+      "inputs": [
+        {
+          "name": "AdxVmaPeriod",
+          "label": "دوره ADXVMA",
+          "default": "10"
+        },
+        {
+          "name": "SmoothPeriod",
+          "label": "دوره هموارسازی",
+          "default": "5"
+        }
+      ],
+      "image": "ADX_trend_smoothed.png",
+      "downloadPath": "indicators/ADX_trend_smoothed.mq5"
+    },
+    {
+      "id": "adxvma",
+      "filename": "ADXVMA.mq5",
+      "title": "میانگین متحرک حجمی ADX",
+      "titleEn": "ADXVMA",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "میانگین متحرک حجمی مبتنی بر ADX با رنگ‌بندی برای تشخیص جهت روند.",
+      "description": "اندیکاتور ADXVMA یک میانگین متحرک حجمی است که بر اساس شاخص ADX ساخته شده و با تغییر رنگ (آبی آسمانی پررنگ و قهوه‌ای شنی)، جهت روند را به وضوح نشان می‌دهد. توسعه یافته توسط mladen، این اندیکاتور با ترکیب قدرت روند ADX با میانگین متحرک، ابزاری قدرتمند برای شناسایی نقاط ورود و خروج است.",
+      "features": [
+        "میانگین متحرک حجمی بر پایه ADX",
+        "تغییر رنگ خودکار با تغییر جهت روند",
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 14)",
+        "انتخاب نوع قیمت (Close، Open، High، Low و...)",
+        "مناسب برای شناسایی نقاط برگشت"
+      ],
+      "inputs": [
+        {
+          "name": "AdxVmaPeriod",
+          "label": "دوره محاسبه",
+          "default": "14"
+        },
+        {
+          "name": "AdxvmaPrice",
+          "label": "نوع قیمت",
+          "default": "Close"
+        }
+      ],
+      "image": "ADXVMA.png",
+      "downloadPath": "indicators/ADXVMA.mq5"
+    },
+    {
+      "id": "ama-adaptive-beginners",
+      "filename": "AMA_Adaptive_Moving_Average_code_for_beginners_by_William210.mq5",
+      "title": "میانگین متحرک تطبیقی (آموزشی)",
+      "titleEn": "AMA - Adaptive Moving Average (Beginner)",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "میانگین متحرک تطبیقی (AMA) نسخه آموزشی برای مبتدیان توسط William210.",
+      "description": "اندیکاتور AMA - Adaptive Moving Average نسخه آموزشی است که توسط William210 برای مبتدیان طراحی شده است. این اندیکاتور با ترکیب دو میانگین متحرک سریع و کند، یک میانگین متحرک تطبیقی ایجاد می‌کند که نسبت به تغییرات قیمت واکنش مناسب نشان می‌دهد. این ابزار با کد ساده و قابل فهم، فرصت یادگیری الگوریتم AMA را برای معامله‌گران مبتدی فراهم می‌کند.",
+      "features": [
+        "الگوریتم میانگین متحرک تطبیقی (AMA)",
+        "کد آموزشی ساده و قابل فهم",
+        "دوره‌های سریع و کند قابل تنظیم",
+        "مناسب برای یادگیری برنامه‌نویسی MQL5",
+        "دوره محاسبه اصلی قابل تنظیم"
+      ],
+      "inputs": [
+        {
+          "name": "g_ama_period",
+          "label": "دوره محاسبه AMA",
+          "default": "9"
+        },
+        {
+          "name": "g_fast_ma_period",
+          "label": "دوره MA سریع",
+          "default": "2"
+        },
+        {
+          "name": "g_slow_ma_period",
+          "label": "دوره MA کند",
+          "default": "30"
+        }
+      ],
+      "image": "AMA_Adaptive_Moving_Average_code_for_beginners_by_William210.png",
+      "downloadPath": "indicators/AMA_Adaptive_Moving_Average_code_for_beginners_by_William210.mq5"
+    },
+    {
+      "id": "aroon",
+      "filename": "AROON.mq5",
+      "title": "اندیکاتور آرون",
+      "titleEn": "AROON Indicator",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور آرون با دو خط Up و Down برای تشخیص قدرت روند و نقاط برگشت.",
+      "description": "اندیکاتور AROON یک ابزار کلاسیک برای تشخیص روند و نقاط برگشت است که با دو خط Up و Down کار می‌کند. خط Aroon Up نشان‌دهنده تعداد دوره‌های سپری شده از بالاترین قیمت است و خط Aroon Down نشان‌دهنده دوره‌های سپری شده از پایین‌ترین قیمت. سطوح اشباع خرید (70) و اشباع فروش (30) به صورت پیش‌فرض تنظیم شده‌اند.",
+      "features": [
+        "دو خط قدرتمند Aroon Up و Aroon Down",
+        "تشخیص نقاط برگشت روند",
+        "سطوح اشباع خرید و اشباع فروش قابل تنظیم",
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 25)",
+        "نمایش در پنجره جداگانه نمودار"
+      ],
+      "inputs": [
+        {
+          "name": "InpPeriod",
+          "label": "دوره محاسبه",
+          "default": "25"
+        },
+        {
+          "name": "InpOverbought",
+          "label": "سطح اشباع خرید",
+          "default": "70.0"
+        },
+        {
+          "name": "InpOversold",
+          "label": "سطح اشباع فروش",
+          "default": "30.0"
+        }
+      ],
+      "image": "AROON.png",
+      "downloadPath": "indicators/AROON.mq5"
+    },
+    {
+      "id": "atr",
+      "filename": "ATR.mq5",
+      "title": "محدوده میانگین واقعی",
+      "titleEn": "ATR without Approximation",
+      "category": "volatility",
+      "categoryLabel": "نوسان",
+      "shortDescription": "اندیکاتور محدوده میانگین واقعی (ATR) بدون تقریب برای اندازه‌گیری دقیق نوسان بازار.",
+      "description": "اندیکاتور ATR (Average True Range) بدون تقریب، نسخه دقیقی از شاخص محدوده میانگین واقعی است که نوسان واقعی بازار را با دقت بالا اندازه‌گیری می‌کند. توسعه یافته توسط mladen، این اندیکاتور بر خلاف نسخه‌های تقریبی، مقدار واقعی ATR را محاسبه کرده و برای تعیین حد ضرر، تعیین حد سود و شناسایی نقاط ورود در بازارهای پرنوسان بسیار کاربردی است.",
+      "features": [
+        "محاسبه دقیق ATR بدون تقریب",
+        "اندازه‌گیری واقعی نوسان بازار",
+        "مناسب برای تعیین حد ضرر و حد سود",
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 14)",
+        "نمایش در پنجره جداگانه نمودار"
+      ],
+      "inputs": [
+        {
+          "name": "inpAtrPeriod",
+          "label": "دوره ATR",
+          "default": "14"
+        }
+      ],
+      "image": "ATR.png",
+      "downloadPath": "indicators/ATR.mq5"
+    },
+    {
+      "id": "aroon-oscillator",
+      "filename": "Aroon_Oscillator.mq5",
+      "title": "نوسانگر آرون",
+      "titleEn": "Aroon Oscillator",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "نوسانگر آرون با فیلتر قابل تنظیم برای تشخیص قدرت روند با حساسیت بالا.",
+      "description": "اندیکاتور Aroon Oscillator نسخه پیشرفته‌ای از شاخص آرون است که با فیلتر قابل تنظیم، قدرت روند را با حساسیت بالا تشخیص می‌دهد. توسعه یافته توسط mladen، این اندیکاتور با امکان فیلتر کردن مقادیر آرون و همچنین فیلتر کردن قیمت‌ها، ابزاری انعطاف‌پذیر برای تحلیل تکنیکال است که در شرایط مختلف بازار قابل تنظیم است.",
+      "features": [
+        "نوسانگر آرون با قابلیت فیلتر پیشرفته",
+        "دوره آرون قابل تنظیم (پیش‌فرض 25)",
+        "سطح فیلتر قابل تنظیم (پیش‌فرض 50)",
+        "انتخاب قیمت‌های High و Low به صورت مستقل",
+        "قابلیت فیلتر کردن مقادیر آرون یا قیمت‌ها"
+      ],
+      "inputs": [
+        {
+          "name": "AroonPeriod",
+          "label": "دوره آرون",
+          "default": "25"
+        },
+        {
+          "name": "Filter",
+          "label": "مقدار فیلتر",
+          "default": "50"
+        },
+        {
+          "name": "pFilterPeriod",
+          "label": "دوره فیلتر",
+          "default": "0"
+        }
+      ],
+      "image": "Aroon_Oscillator.png",
+      "downloadPath": "indicators/Aroon_Oscillator.mq5"
+    },
+    {
+      "id": "bop",
+      "filename": "BOP.mq5",
+      "title": "تعادل قدرت",
+      "titleEn": "Balance of Power",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "نوسانگر تعادل قدرت (BOP) برای اندازه‌گیری قدرت خریداران و فروشندگان در بازار.",
+      "description": "اندیکاتور BOP (Balance of Power) یک نوسانگر است که قدرت خریداران و فروشندگان را با مقایسه قیمت باز و بسته شدن با بالاترین و پایین‌ترین قیمت دوره اندازه‌گیری می‌کند. توسعه یافته توسط MetaQuotes، این اندیکاتور با دوره فعال و دوره محدوده قابل تنظیم، ابزاری مناسب برای تشخیص قدرت واقعی روند در بازار است.",
+      "features": [
+        "اندازه‌گیری تعادل قدرت بین خریداران و فروشندگان",
+        "دوره فعال و دوره محدوده قابل تنظیم",
+        "استفاده از آخرین دوره به صورت اختیاری",
+        "تشخیص قدرت واقعی حرکات قیمت",
+        "نمایش در پنجره جداگانه نمودار"
+      ],
+      "inputs": [
+        {
+          "name": "InpPeriodAct",
+          "label": "دوره فعال",
+          "default": "14"
+        },
+        {
+          "name": "InpPeriodRng",
+          "label": "دوره محدوده",
+          "default": "28"
+        },
+        {
+          "name": "InpUseLastPeriod",
+          "label": "استفاده از آخرین دوره",
+          "default": "YES"
+        }
+      ],
+      "image": "BOP.png",
+      "downloadPath": "indicators/BOP.mq5"
+    },
+    {
+      "id": "asar",
+      "filename": "ASAR.mq5",
+      "title": "سیستم پارابولیک پیشرفته",
+      "titleEn": "Advance Parabolic Time/Price System",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "سیستم پارابولیک زمان/قیمت پیشرفته با پارامترهای قابل تنظیم برای تشخیص نقاط برگشت.",
+      "description": "اندیکاتور ASAR (Advance Parabolic Time/Price System) نسخه پیشرفته شاخص پارابولیک SAR است که با پارامترهای قابل تنظیم شامل حالت قیمت، نوع قیمت اعمالی، مقدار شروع، گام و حداکثر، عملکرد بهتری نسبت به نسخه کلاسیک ارائه می‌دهد. توسعه یافته توسط MetaQuotes، این اندیکاتور با فیلتر قابل تنظیم و حداقل تغییر، سیگنال‌های دقیق‌تری برای تشخیص نقاط برگشت روند تولید می‌کند.",
+      "features": [
+        "سیستم پارابولیک زمان/قیمت پیشرفته",
+        "حالت‌های مختلف قیمت قابل انتخاب",
+        "پارامترهای Start، Step و Max قابل تنظیم",
+        "فیلتر و حداقل تغییر قابل تنظیم",
+        "تشخیص دقیق نقاط برگشت روند"
+      ],
+      "inputs": [
+        {
+          "name": "InpPriceMode",
+          "label": "حالت قیمت",
+          "default": "PRICE_MODE_DEF"
+        },
+        {
+          "name": "InpAppliedPrice",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        },
+        {
+          "name": "InpStart",
+          "label": "مقدار شروع",
+          "default": "0.02"
+        },
+        {
+          "name": "InpStep",
+          "label": "گام",
+          "default": "0.002"
+        },
+        {
+          "name": "InpMax",
+          "label": "حداکثر",
+          "default": "0.2"
+        }
+      ],
+      "image": "ASAR.png",
+      "downloadPath": "indicators/ASAR.mq5"
+    },
+    {
+      "id": "alligator-beginners",
+      "filename": "Alligator_code_for_beginners_by_William210.mq5",
+      "title": "تمساح (آموزشی)",
+      "titleEn": "Alligator (Beginner Tutorial)",
+      "category": "bill-williams",
+      "categoryLabel": "بیل ویلیامز",
+      "shortDescription": "اندیکاتور تمساح بیل ویلیامز نسخه آموزشی با سه خط فک، دندان و لب.",
+      "description": "اندیکاتور Alligator نسخه آموزشی است که توسط William210 برای مبتدیان طراحی شده است. این اندیکاتور معروف بیل ویلیامز با سه خط Moving Average (فک با دوره 13، دندان با دوره 8 و لب با دوره 5) که با شیفت‌های مختلف رسم می‌شوند، روند و فازهای خواب و بیداری بازار را نشان می‌دهد. کد ساده و قابل فهم این نسخه، فرصت یادگیری الگوریتم تمساح را فراهم می‌کند.",
+      "features": [
+        "سه خط فک (13)، دندان (8) و لب (5)",
+        "شیفت‌های قابل تنظیم برای هر خط",
+        "روش میانگین‌گیری قابل انتخاب (پیش‌فرض SMMA)",
+        "استفاده از قیمت Median (میانه) به صورت پیش‌فرض",
+        "نسخه آموزشی با کد ساده و قابل فهم"
+      ],
+      "inputs": [
+        {
+          "name": "g_jaw_period",
+          "label": "دوره فک",
+          "default": "13"
+        },
+        {
+          "name": "g_teeth_period",
+          "label": "دوره دندان",
+          "default": "8"
+        },
+        {
+          "name": "g_lips_period",
+          "label": "دوره لب",
+          "default": "5"
+        },
+        {
+          "name": "g_MA_method",
+          "label": "روش میانگین‌گیری",
+          "default": "MODE_SMMA"
+        }
+      ],
+      "image": "Alligator_code_for_beginners_by_William210.png",
+      "downloadPath": "indicators/Alligator_code_for_beginners_by_William210.mq5"
+    },
+    {
+      "id": "bollinger-bands-beginners",
+      "filename": "Bands_Bollinger_code_for_beginners_by_William210.mq5",
+      "title": "باندهای بولینگر (آموزشی)",
+      "titleEn": "Bollinger Bands (Beginner Tutorial)",
+      "category": "volatility",
+      "categoryLabel": "نوسان",
+      "shortDescription": "باندهای بولینگر نسخه آموزشی با دوره و انحراف قابل تنظیم برای شناسایی نوسان.",
+      "description": "اندیکاتور Bollinger Bands نسخه آموزشی است که توسط William210 برای مبتدیان طراحی شده است. این اندیکاتور کلاسیک با دوره میانگین‌گیری (پیش‌فرض 20)، تعداد انحراف معیار (پیش‌فرض 2) و نوع قیمت قابل تنظیم، سه خط (باند بالایی، میانی و پایینی) را برای شناسایی نوسان و شرایط اشباع خرید و فروش رسم می‌کند. کد ساده این نسخه، یادگیری الگوریتم بولینگر را آسان می‌کند.",
+      "features": [
+        "باندهای بولینگر کلاسیک با سه خط",
+        "دوره میانگین قابل تنظیم (پیش‌فرض 20)",
+        "انحراف معیار قابل تنظیم (پیش‌فرض 2.0)",
+        "شیفت افقی قابل تنظیم",
+        "نسخه آموزشی با کد ساده و قابل فهم"
+      ],
+      "inputs": [
+        {
+          "name": "g_BBPeriod",
+          "label": "دوره میانگین",
+          "default": "20"
+        },
+        {
+          "name": "g_BBDeviation",
+          "label": "انحراف معیار",
+          "default": "2.0"
+        },
+        {
+          "name": "g_BBApplied",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        }
+      ],
+      "image": "Bands_Bollinger_code_for_beginners_by_William210.png",
+      "downloadPath": "indicators/Bands_Bollinger_code_for_beginners_by_William210.mq5"
+    },
+    {
+      "id": "atr-beginners",
+      "filename": "ATR_Average_True_Range_code_for_beginners_by_William210.mq5",
+      "title": "محدوده میانگین واقعی (آموزشی)",
+      "titleEn": "ATR Average True Range (Beginner)",
+      "category": "volatility",
+      "categoryLabel": "نوسان",
+      "shortDescription": "اندیکاتور ATR نسخه آموزشی برای مبتدیان توسط William210.",
+      "description": "اندیکاتور ATR - Average True Range نسخه آموزشی است که توسط William210 برای مبتدیان طراحی شده است. این اندیکاتور با دوره محاسبه قابل تنظیم (پیش‌فرض 14)، نوسان واقعی بازار را اندازه‌گیری می‌کند و برای تعیین حد ضرر، تشخیص قدرت روند و مدیریت ریسک کاربرد دارد. کد ساده و قابل فهم این نسخه، فرصت یادگیری الگوریتم ATR را برای برنامه‌نویسان مبتدی فراهم می‌کند.",
+      "features": [
+        "محاسبه ATR با دوره قابل تنظیم (پیش‌فرض 14)",
+        "اندازه‌گیری نوسان واقعی بازار",
+        "مناسب برای تعیین حد ضرر و مدیریت ریسک",
+        "کد آموزشی ساده و قابل فهم",
+        "مناسب برای یادگیری برنامه‌نویسی MQL5"
+      ],
+      "inputs": [
+        {
+          "name": "g_ATRPeriod",
+          "label": "دوره ATR",
+          "default": "14"
+        }
+      ],
+      "image": "ATR_Average_True_Range_code_for_beginners_by_William210.png",
+      "downloadPath": "indicators/ATR_Average_True_Range_code_for_beginners_by_William210.mq5"
+    },
+    {
+      "id": "adaptable-macd",
+      "filename": "Adaptable_MACD.mq5",
+      "title": "MACD قابل تنظیم",
+      "titleEn": "Adaptable MACD",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور MACD با تنظیمات کاملاً قابل شخصی‌سازی برای استفاده در شرایط مختلف بازار.",
+      "description": "اندیکاتور Adaptable MACD نسخه کاملاً قابل تنظیم شاخص MACD است که تمام پارامترهای آن شامل دوره‌های Fast MA، Slow MA و Signal Line، روش‌های محاسبه، نوع قیمت اعمالی و استفاده از مقادیر مطلق قابل تنظیم هستند. توسعه یافته توسط MetaQuotes، این اندیکاتور با انعطاف‌پذیری بالا، در استراتژی‌های مختلف معاملاتی قابل استفاده است.",
+      "features": [
+        "تنظیم کامل دوره‌های MACD",
+        "انتخاب روش محاسبه برای هر میانگین",
+        "انتخاب نوع قیمت اعمالی",
+        "امکان استفاده از مقادیر مطلق",
+        "مناسب برای استراتژی‌های مختلف"
+      ],
+      "inputs": [
+        {
+          "name": "InpPeriodFastMA",
+          "label": "دوره MA سریع",
+          "default": "12"
+        },
+        {
+          "name": "InpPeriodSlowMA",
+          "label": "دوره MA کند",
+          "default": "26"
+        },
+        {
+          "name": "InpPeriodSignalMA",
+          "label": "دوره خط سیگنال",
+          "default": "9"
+        },
+        {
+          "name": "InpMethodFastMA",
+          "label": "روش MA سریع",
+          "default": "MODE_SMA"
+        },
+        {
+          "name": "InpMethodSlowMA",
+          "label": "روش MA کند",
+          "default": "MODE_SMA"
+        },
+        {
+          "name": "InpAbsValue",
+          "label": "استفاده از مقادیر مطلق",
+          "default": "YES"
+        }
+      ],
+      "image": "Adaptable_MACD.png",
+      "downloadPath": "indicators/Adaptable_MACD.mq5"
+    },
+    {
+      "id": "adaptable-rsi",
+      "filename": "Adaptable_RSI.mq5",
+      "title": "RSI قابل تنظیم",
+      "titleEn": "Adaptable RSI Oscillator",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "نوسانگر RSI با تنظیمات کامل شامل دوره، روش محاسبه و سطوح اشباع قابل شخصی‌سازی.",
+      "description": "اندیکاتور Adaptable RSI نسخه کاملاً قابل تنظیم شاخص قدرت نسبی (RSI) است که با دوره محاسبه، روش میانگین‌گیری، نوع قیمت اعمالی و سطوح اشباع خرید و اشباع فروش قابل تنظیم، انعطاف‌پذیری بالایی برای معامله‌گران فراهم می‌کند. توسعه یافته توسط MetaQuotes، این اندیکاتور یکی از بهترین نسخه‌های RSI برای استفاده در شرایط مختلف بازار است.",
+      "features": [
+        "دوره RSI قابل تنظیم (پیش‌فرض 14)",
+        "روش میانگین‌گیری قابل تنظیم (پیش‌فرض EMA)",
+        "انتخاب نوع قیمت اعمالی",
+        "سطوح اشباع خرید و اشباع فروش قابل تنظیم",
+        "تشخیص دقیق شرایط بازار"
+      ],
+      "inputs": [
+        {
+          "name": "InpPeriod",
+          "label": "دوره RSI",
+          "default": "14"
+        },
+        {
+          "name": "InpMethod",
+          "label": "روش محاسبه",
+          "default": "MODE_EMA"
+        },
+        {
+          "name": "InpAppliedPrice",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        },
+        {
+          "name": "InpOverbought",
+          "label": "سطح اشباع خرید",
+          "default": "70.0"
+        },
+        {
+          "name": "InpOversold",
+          "label": "سطح اشباع فروش",
+          "default": "30.0"
+        }
+      ],
+      "image": "Adaptable_RSI.png",
+      "downloadPath": "indicators/Adaptable_RSI.mq5"
+    },
+    {
+      "id": "alphatrend",
+      "filename": "AlphaTrend.mq5",
+      "title": "آلفا ترند",
+      "titleEn": "AlphaTrend",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور آلفا ترند با ضریب و دوره قابل تنظیم و نمایش اختیاری سیگنال‌ها.",
+      "description": "اندیکاتور AlphaTrend یک ابزار مدرن تشخیص روند است که با ضریب قابل تنظیم (پیش‌فرض 1.0)، دوره مشترک (پیش‌فرض 14) و امکان نمایش سیگنال‌ها، روند بازار را با حساسیت بالا تشخیص می‌دهد. توسعه یافته توسط Mahmut Deniz، این اندیکاتور با گزینه‌ای برای محاسبه بدون داده‌های حجم، در بازارهای مختلف قابل استفاده است.",
+      "features": [
+        "ضریب قابل تنظیم برای حساسیت",
+        "دوره مشترک قابل تنظیم (پیش‌فرض 14)",
+        "نمایش اختیاری سیگنال‌ها",
+        "محاسبه بدون داده‌های حجم (برای بازارهای فاقد حجم)",
+        "تشخیص سریع و دقیق روند"
+      ],
+      "inputs": [
+        {
+          "name": "Multiplier",
+          "label": "ضریب",
+          "default": "1.0"
+        },
+        {
+          "name": "CommonPeriod",
+          "label": "دوره مشترک",
+          "default": "14"
+        },
+        {
+          "name": "ShowSignals",
+          "label": "نمایش سیگنال‌ها",
+          "default": "false"
+        },
+        {
+          "name": "NoVolumeData",
+          "label": "بدون داده حجم",
+          "default": "false"
+        }
+      ],
+      "image": "AlphaTrend.png",
+      "downloadPath": "indicators/AlphaTrend.mq5"
+    },
+    {
+      "id": "bollinger-bands-filling",
+      "filename": "Bollinger_Bands_with_Filling.mq5",
+      "title": "باندهای بولینگر با پر کردن",
+      "titleEn": "Bollinger Bands with Filling",
+      "category": "volatility",
+      "categoryLabel": "نوسان",
+      "shortDescription": "باندهای بولینگر با قابلیت پر کردن ناحیه بین باندها و روش‌های مختلف محاسبه انحراف.",
+      "description": "اندیکاتور Bollinger Bands with Filling نسخه پیشرفته‌ای از باندهای بولینگر است که با قابلیت پر کردن ناحیه بین باندها با رنگ، تشخیص شرایط نوسان و نقاط برگشت را آسان‌تر می‌کند. توسعه یافته توسط forex-tsd، این اندیکاتور با روش‌های مختلف محاسبه انحراف (معمولی و سفارشی)، انعطاف‌پذیری بالایی برای تحلیل نوسان بازار ارائه می‌دهد.",
+      "features": [
+        "باندهای بولینگر با قابلیت پر کردن ناحیه",
+        "روش‌های مختلف محاسبه انحراف",
+        "دوره قابل تنظیم (پیش‌فرض 20)",
+        "انحراف قابل تنظیم (پیش‌فرض 2.0)",
+        "انتخاب نوع قیمت (Close، Open، High و...)"
+      ],
+      "inputs": [
+        {
+          "name": "Periods",
+          "label": "دوره باندها",
+          "default": "20"
+        },
+        {
+          "name": "Deviations",
+          "label": "انحراف",
+          "default": "2.0"
+        },
+        {
+          "name": "DevType",
+          "label": "نوع محاسبه انحراف",
+          "default": "usual"
+        },
+        {
+          "name": "Price",
+          "label": "نوع قیمت",
+          "default": "Close"
+        }
+      ],
+      "image": "Bollinger_Bands_with_Filling.png",
+      "downloadPath": "indicators/Bollinger_Bands_with_Filling.mq5"
+    },
+    {
+      "id": "custom-moving-average",
+      "filename": "CustomMovingAverage.mq5",
+      "title": "میانگین متحرک سفارشی",
+      "titleEn": "Custom Moving Average",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور میانگین متحرک سفارشی با انتخاب دوره، نوع میانگین و نوع قیمت.",
+      "description": "اندیکاتور Custom Moving Average نسخه‌ای انعطاف‌پذیر از میانگین متحرک است که با دوره محاسبه (پیش‌فرض 14)، نوع میانگین‌گیری (SMA، EMA، SMMA و LWMA) و نوع قیمت اعمالی (Close، Open، High و Low) قابل تنظیم است. توسعه یافته توسط Mohammadreza Mohammadi، این اندیکاتور با کد ساده، ابزاری مناسب برای تحلیل روند و استفاده در استراتژی‌های مختلف است.",
+      "features": [
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 14)",
+        "انتخاب نوع میانگین (SMA، EMA، SMMA، LWMA)",
+        "انتخاب نوع قیمت اعمالی",
+        "کد ساده و قابل فهم",
+        "مناسب برای استفاده در استراتژی‌های مختلف"
+      ],
+      "inputs": [
+        {
+          "name": "MA_Period",
+          "label": "دوره میانگین",
+          "default": "14"
+        },
+        {
+          "name": "MA_Method",
+          "label": "نوع میانگین",
+          "default": "MODE_SMA"
+        },
+        {
+          "name": "PriceType",
+          "label": "نوع قیمت",
+          "default": "PRICE_CLOSE"
+        }
+      ],
+      "image": "18AvgMA.png",
+      "downloadPath": "indicators/CustomMovingAverage.mq5"
+    },
+    {
+      "id": "macd-classic",
+      "filename": "MACD.mq5",
+      "title": "MACD کلاسیک",
+      "titleEn": "MACD Classic",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور MACD کلاسیک با دوره‌های Fast EMA، Slow EMA و Signal EMA قابل تنظیم.",
+      "description": "اندیکاتور MACD (Moving Average Convergence Divergence) یکی از محبوب‌ترین اندیکاتورهای تحلیل تکنیکال است که با استفاده از دو میانگین متحرک نمایی (EMA) و یک خط سیگنال، روند و قدرت حرکت بازار را نشان می‌دهد. توسعه یافته توسط Mohammadreza Mohammadi، این نسخه با دوره‌های قابل تنظیم (پیش‌فرض 12، 26 و 9) ابزاری استاندارد برای تحلیل روند است.",
+      "features": [
+        "الگوریتم کلاسیک MACD",
+        "دوره‌های Fast EMA، Slow EMA و Signal قابل تنظیم",
+        "نمایش هیستوگرام و خط سیگنال",
+        "تشخیص روند و قدرت حرکت",
+        "مناسب برای استراتژی‌های متقاطع‌گیری"
+      ],
+      "inputs": [
+        {
+          "name": "FastEMAPeriod",
+          "label": "دوره EMA سریع",
+          "default": "12"
+        },
+        {
+          "name": "SlowEMAPeriod",
+          "label": "دوره EMA کند",
+          "default": "26"
+        },
+        {
+          "name": "SignalPeriod",
+          "label": "دوره خط سیگنال",
+          "default": "9"
+        }
+      ],
+      "image": "3_Rules_MACD.png",
+      "downloadPath": "indicators/MACD.mq5"
+    },
+    {
+      "id": "sma",
+      "filename": "SMA.mq5",
+      "title": "میانگین متحرک ساده",
+      "titleEn": "Simple Moving Average",
+      "category": "trend",
+      "categoryLabel": "روند",
+      "shortDescription": "اندیکاتور میانگین متحرک ساده (SMA) با دوره و شیفت قابل تنظیم.",
+      "description": "اندیکاتور SMA (Simple Moving Average) ساده‌ترین نوع میانگین متحرک است که قیمت‌های پایانی دوره‌های مشخص را جمع کرده و بر تعداد آن‌ها تقسیم می‌کند. توسعه یافته توسط Mohammadreza Mohammadi، این اندیکاتور با دوره محاسبه قابل تنظیم (پیش‌فرض 15) و شیفت افقی، ابزاری اساسی برای تحلیل روند و شناسایی سطوح حمایت و مقاومت است.",
+      "features": [
+        "الگوریتم ساده میانگین متحرک ساده",
+        "دوره محاسبه قابل تنظیم (پیش‌فرض 15)",
+        "شیفت افقی قابل تنظیم",
+        "مناسب برای شناسایی روند",
+        "کد ساده و قابل فهم برای مبتدیان"
+      ],
+      "inputs": [
+        {
+          "name": "MA_Period",
+          "label": "دوره میانگین",
+          "default": "15"
+        },
+        {
+          "name": "MA_Shift",
+          "label": "شیفت افقی",
+          "default": "0"
+        }
+      ],
+      "image": "18AvgMA.png",
+      "downloadPath": "indicators/SMA.mq5"
+    },
+    {
+      "id": "tsi",
+      "filename": "TSI.mq5",
+      "title": "شاخص قدرت واقعی",
+      "titleEn": "True Strength Index",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "اندیکاتور شاخص قدرت واقعی (TSI) با دو EMA برای تشخیص روند و نقاط برگشت.",
+      "description": "اندیکاتور TSI (True Strength Index) یک نوسانگر مومنتوم است که با دو میانگین متحرک نمایی (EMA) متوالی، قدرت واقعی روند را اندازه‌گیری می‌کند. توسعه یافته توسط Mohammadreza Mohammadi، این اندیکاتور با دو دوره EMA قابل تنظیم (پیش‌فرض 25 و 13)، ابزاری مناسب برای تشخیص نقاط برگشت و فیلتر کردن نویزهای بازار است.",
+      "features": [
+        "الگوریتم شاخص قدرت واقعی",
+        "دو دوره EMA قابل تنظیم (پیش‌فرض 25 و 13)",
+        "اندازه‌گیری قدرت واقعی روند",
+        "تشخیص نقاط برگشت بازار",
+        "نمایش در پنجره جداگانه نمودار"
+      ],
+      "inputs": [
+        {
+          "name": "EMA1",
+          "label": "دوره EMA اول",
+          "default": "25"
+        },
+        {
+          "name": "EMA2",
+          "label": "دوره EMA دوم",
+          "default": "13"
+        }
+      ],
+      "image": "Aroon_Oscillator.png",
+      "downloadPath": "indicators/TSI.mq5"
+    },
+    {
+      "id": "tsicd",
+      "filename": "TSICD.mq5",
+      "title": "TSI با خط سیگنال",
+      "titleEn": "TSI with Signal Line",
+      "category": "oscillator",
+      "categoryLabel": "نوسانگر",
+      "shortDescription": "اندیکاتور TSI با خط سیگنال اضافی برای شناسایی نقاط برگشت با دقت بالا.",
+      "description": "اندیکاتور TSICD نسخه پیشرفته TSI است که با اضافه شدن خط سیگنال EMA، سیگنال‌های دقیق‌تری برای تشخیص نقاط برگشت بازار ارائه می‌دهد. توسعه یافته توسط Mohammadreza Mohammadi، این اندیکاتور با سه دوره قابل تنظیم (دو EMA اصلی و یک Signal EMA)، ابزاری حرفه‌ای برای تحلیل مومنتوم و روند بازار است.",
+      "features": [
+        "الگوریتم TSI با خط سیگنال اضافی",
+        "سه دوره قابل تنظیم (دو EMA و Signal)",
+        "سیگنال‌های خرید و فروش بر اساس تقاطع",
+        "تشخیص دقیق نقاط برگشت",
+        "مناسب برای استراتژی‌های مومنتوم"
+      ],
+      "inputs": [
+        {
+          "name": "EMA1",
+          "label": "دوره EMA اول",
+          "default": "25"
+        },
+        {
+          "name": "EMA2",
+          "label": "دوره EMA دوم",
+          "default": "13"
+        },
+        {
+          "name": "SignalEMA",
+          "label": "دوره خط سیگنال",
+          "default": "9"
+        }
+      ],
+      "image": "Aroon_Oscillator.png",
+      "downloadPath": "indicators/TSICD.mq5"
+    }
+  ]
+}

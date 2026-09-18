@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="آموزش نصب اندیکاتور در MetaTrader 5 - راهنمای گام به گام فارسی برای مبتدیان در امین فارکس">
+    <meta name="keywords" content="آموزش نصب اندیکاتور, MetaTrader 5, MQL5, آموزش MT5">
+    <meta property="og:title" content="آموزش نصب اندیکاتور در MetaTrader 5 | امین فارکس">
+    <meta property="og:description" content="راهنمای گام به گام نصب اندیکاتور در متاتریدر 5 به زبان فارسی">
+    <title>آموزش نصب اندیکاتور در MetaTrader 5 | امین فارکس</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2310b981'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='white' font-size='40' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">A</div>
+                <span class="brand-name">امین فارکس</span>
+            </a>
+            <button class="menu-toggle" aria-label="منو">☰</button>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">خانه</a>
+                <a href="indicators.html" class="nav-link">اندیکاتورها</a>
+                <a href="install.html" class="nav-link active">آموزش نصب</a>
+                <a href="about.html" class="nav-link">درباره ما</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">آموزش نصب اندیکاتور در MetaTrader 5</h1>
+                    <p class="section-subtitle">راهنمای گام به گام برای کاربران مبتدی</p>
+                </div>
+
+                <div class="about-content">
+                    <p>
+                        در این راهنما، مراحل نصب یک اندیکاتور MQL5 در متاتریدر ۵ را به صورت مرحله به مرحله
+                        و با زبانی ساده توضیح می‌دهیم. با دنبال کردن این مراحل، در کمتر از ۵ دقیقه
+                        اندیکاتور مورد نظر خود را روی نمودار فعال خواهید کرد.
+                    </p>
+
+                    <div class="detail-section" style="margin-top: 2rem;">
+                        <h2>مراحل نصب</h2>
+                        <ol class="steps-list">
+                            <li class="step-item">
+                                <h3>دانلود فایل MQ5</h3>
+                                <p>
+                                    از صفحه اندیکاتور مورد نظر در سایت <strong>امین فارکس</strong> روی دکمه
+                                    <strong>«⬇ دانلود رایگان MQ5»</strong> کلیک کنید. فایل با فرمت
+                                    <code>.mq5</code> در پوشه Downloads ذخیره می‌شود.
+                                </p>
+                            </li>
+
+                            <li class="step-item">
+                                <h3>باز کردن MetaTrader 5</h3>
+                                <p>
+                                    نرم‌افزار متاتریدر ۵ را روی کامپیوتر خود اجرا کنید. اگر نصب نیست،
+                                    می‌توانید از سایت رسمی <code>metatrader5.com</code> آن را دانلود کنید.
+                                </p>
+                            </li>
+
+                            <li class="step-item">
+                                <h3>باز کردن پوشه داده‌ها</h3>
+                                <p>
+                                    در متاتریدر، از منوی <strong>File</strong> گزینه
+                                    <strong>Open Data Folder</strong> را انتخاب کنید. یک پنجره فایل اکسپلورر
+                                    باز خواهد شد که پوشه اصلی داده‌های متاتریدر را نشان می‌دهد.
+                                </p>
+                            </li>
+
+                            <li class="step-item">
+                                <h3>ورود إلى پوشه Indicators</h3>
+                                <p>
+                                    در پنجره باز شده، به مسیر <code>MQL5</code> سپس <code>Indicators</code>
+                                    بروید. فایل MQ5 دانلود شده را در این پوشه کپی کنید (Copy و Paste).
+                                </p>
+                            </li>
+
+                            <li class="step-item">
+                                <h3>کامپایل کردن (Compile)</h3>
+                                <p>
+                                    در متاتریدر، کلید <strong>F4</strong> را فشار دهید تا
+                                    <strong>MetaEditor</strong> باز شود. در MetaEditor، فایل اندیکاتور
+                                    کپی شده را باز کنید و کلید <strong>F7</strong> را بزنید تا کامپایل
+                                    شود. اگر با خطا مواجه شدید، فایل اصلی MQL5 نباید مشکلی داشته باشد.
+                                </p>
+                            </li>
+
+                            <li class="step-item">
+                                <h3>بازگشت به متاتریدر</h3>
+                                <p>
+                                    MetaEditor را ببندید و به متاتریدر ۵ برگردید. در پنل
+                                    <strong>Navigator</strong> (کلید <strong>Ctrl+N</strong>) روی
+                                    Indicators کلیک راست کنید و <strong>Refresh</strong> را بزنید.
+                                </p>
+                            </li>
+
+                            <li class="step-item">
+                                <h3>اجرا روی نمودار</h3>
+                                <p>
+                                    از لیست اندیکاتورها، اندیکاتور مورد نظر خود را پیدا کنید و با
+                                    کشیدن و رها کردن (Drag & Drop) روی نمودار مورد نظرتان بیندازید.
+                                    یک پنجره تنظیمات باز می‌شود که می‌توانید پارامترها را تنظیم کنید.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="detail-section">
+                        <h2>نکات مهم</h2>
+                        <ul class="features-list">
+                            <li>فایل‌های MQ5 تنها در متاتریدر ۵ کار می‌کنند. برای متاتریدر ۴ به فایل MQ4 نیاز دارید.</li>
+                            <li>اگر اندیکاتور در Navigator نمایش داده نشد، متاتریدر را یک‌بار بسته و باز کنید.</li>
+                            <li>فایل‌های MQ5 را تنها از منابع معتبر دانلود کنید. فایل‌های سایت امین فارکس تست شده و امن هستند.</li>
+                            <li>برای حذف اندیکاتور، در Navigator روی آن کلیک راست کرده و Delete را انتخاب کنید.</li>
+                            <li>برای تغییر تنظیمات، روی اندیکاتور روی نمودار دوبار کلیک کنید یا کلیک راست کرده و Properties را انتخاب کنید.</li>
+                            <li>فایل‌های ما بدون تغییر و با فرمت اصلی MQL5 ارائه می‌شوند.</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h2>ساختار پوشه‌ها</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1rem;">
+                            در پوشه MQL5 متاتریدر، پوشه‌های مختلفی وجود دارد:
+                        </p>
+                        <table class="info-table">
+                            <tbody>
+                                <tr>
+                                    <th>MQL5/Indicators/</th>
+                                    <td>محل قرار دادن فایل‌های اندیکاتور (MQ5)</td>
+                                </tr>
+                                <tr>
+                                    <th>MQL5/Experts/</th>
+                                    <td>محل قرار دادن ربات‌های معامله‌گر (EA)</td>
+                                </tr>
+                                <tr>
+                                    <th>MQL5/Scripts/</th>
+                                    <td>محل قرار دادن اسکریپت‌ها</td>
+                                </tr>
+                                <tr>
+                                    <th>MQL5/Include/</th>
+                                    <td>محل قرار دادن فایل‌های Include (.mqh)</td>
+                                </tr>
+                                <tr>
+                                    <th>MQL5/Libraries/</th>
+                                    <td>محل قرار دادن کتابخانه‌ها</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="detail-section" style="text-align: center;">
+                        <h2>شروع به کار</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.9; margin-bottom: 1.5rem;">
+                            حالا که با مراحل نصب آشنا شدید، زمان آن رسیده که اولین اندیکاتور خود را دانلود کنید.
+                        </p>
+                        <a href="indicators.html" class="btn-download">
+                            مشاهده اندیکاتورها ←
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand brand-name">امین فارکس</div>
+                <p class="footer-desc">
+                    مرجع دانلود رایگان اندیکاتورهای MetaTrader 5 با فایل اصلی MQL5.
+                    هدف ما ارائه ابزارهای حرفه‌ای برای معامله‌گران ایرانی است.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-title">دسترسی سریع</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="indicators.html">اندیکاتورها</a></li>
+                    <li><a href="install.html">آموزش نصب</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">دسته‌بندی‌ها</h4>
+                <ul class="footer-links">
+                    <li><a href="indicators.html?cat=trend">اندیکاتورهای روند</a></li>
+                    <li><a href="indicators.html?cat=oscillator">نوسانگرها</a></li>
+                    <li><a href="indicators.html?cat=volatility">نوسان (Volatility)</a></li>
+                    <li><a href="indicators.html?cat=bill-williams">بیل ویلیامز</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2025 امین فارکس. تمامی حقوق محفوظ است. فایل‌ها با فرمت اصلی MQL5 ارائه می‌شوند.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

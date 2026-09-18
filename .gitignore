@@ -1,0 +1,55 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node / build tools
+node_modules/
+dist/
+build/
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Git
+.git/
+.gitattributes
+
+# Secrets (never commit)
+.env
+.env.local
+*.pem
+*.key
+*.secret
+credentials.json
+
+# Large data files (don't track)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+data/raw_list.json
+data/raw_metadata.json
+data/final_selection.json
+data/download_results.json
+
+# OS / temp
+tmp/
+temp/
+*.tmp
+*.bak
+
+# IDE
+.vscode/
+*.iml
